@@ -1,0 +1,243 @@
+body
+{
+    height: 100%;
+    width: 100%;
+    background-position: fixed;
+}
+header
+{
+    height: 4%;
+    width: 100%;
+}
+nav
+{
+    background-color: ghostwhite;
+    overflow: hidden;
+}
+nav .float-left
+{
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 17px;
+}
+nav .float-right
+{
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 8px 8px;
+    font-size: 17px;
+}
+nav a
+{
+    text-decoration: none;
+    color: #0d2f4a;
+    text-align: center;
+    padding: 7px 8px;
+    font-size: 18px;
+}
+nav a.active
+{
+    background-color: #0d2f4a;
+    border: 2px solid #0d2f4a;
+    border-radius:5px ;
+    color: white;
+}
+nav a:hover
+{
+    opacity: 0.4;
+}
+sidebar
+{
+    height: 96%;
+    width: 0;
+    position: fixed;
+    z-index: 0;
+    top: 4;
+    left: 1;
+    background-color: #0d2f4a;
+    overflow-x: hidden ;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+sidebar a
+{
+    padding: 6px 6px 6px 16px;
+    margin-right: 4px;
+    margin-left: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+sidebar a.active
+{
+    background-color: ghostwhite; 
+    border: 2px solid ghostwhite;
+    border-radius:5px ;
+    color: #0d2f4a;  
+}
+sidebar a:hover
+{
+    opacity: 0.4;
+}
+sidebar .closebtn
+{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.openbtn
+{
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #0d2f4a;
+    color: white;
+
+    padding: 10px 15px;
+    border: 2px solid #0d2f4a;
+    border-radius: 5px;
+}
+.openbtn:hover
+{
+    opacity: 0.4;
+}
+#opensidebar
+{
+    transition: margin-left 0.5s;
+    padding: 10px;
+}
+#openmenu
+{
+    transition: 0.5s;
+    padding: 10px;
+}
+.sign
+{
+    display:none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 80px;
+}
+.sign-content
+{
+    background-color: ghostwhite;
+    margin: 5px auto;
+    border: 1px solid #888;
+    width: 80%;
+}
+.closeform
+{
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #0d2f4a;
+    font-size: 35px;
+    font-weight: bold;
+}
+.closeform:hover, .closeform:focus
+{
+    opacity: 0.6;
+    cursor: pointer;
+}
+.animate
+{
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+.topbar .openbtn
+{
+    float: left;
+}
+.topbar .searchbar
+{
+    top: 4.5%;
+    float: right;
+    margin-right: 25%;
+}
+.searchbar
+{
+    width: 50%;
+}
+.searchbar input[type=text]
+{   
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #0d2f4a;
+    float: left;
+    width: 70%;
+    background: #f1f1f1;
+}
+.searchbar button
+{
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background-color: #0d2f4a;
+    color: white;
+    font-size: 16px;
+    border: 1px solid #0d2f4a;
+    cursor: pointer;
+    border-left: none;
+}
+.searchbar button:hover
+{
+    opacity: 0.6;
+}
+.searchbar ::after
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+.display
+{
+    top: 10%;
+}
+.item_card
+{
+    height: 200px;
+    width: 500px;
+    background-color: ghostwhite;
+    border: 2px solid ghostwhite;
+    text-decoration: none;
+}
+img
+{
+    float:left;
+    width: 50%;
+    padding: 2px 2px 2px 4px
+}
+.card_body
+{
+    float: center;
+    margin-left: 300px;
+    text-decoration: none;
+
+}
+@-webkit-keyframes animatezoom
+{
+    from { -webkit-transform: scale(0)}
+    to { -webkit-transform: scale(1)}
+}
+@keyframes animatezoom
+{
+    from { transform: scale(0)}
+    to { transform: scale(1)}
+}
+@media screen and (max-height: 450px)
+{
+    sidebar {padding-top: 15px;}
+    sidebar a {font-size: 18px;}
+}
