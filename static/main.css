@@ -115,6 +115,7 @@ sidebar .closebtn
 #openmenu
 {
     transition: 0.5s;
+    top: 4.5%;
     padding: 10px;
 }
 .sign
