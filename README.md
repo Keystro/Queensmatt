@@ -9,7 +9,11 @@ Its built for use in a single store
 4) Store owner can see sales and can filter by attendants
 5) Store owner can add, modify and delete products
 
+<<<<<<< HEAD
 ## OTHER FEATURES:
+=======
+### OTHER FEATURES:
+>>>>>>> 7c49ac143ed7b9b0e08bcf307a2f2aa5c832e482
 1) Store owner can give admin rights to a store attendant
 2) products should have categories
 3) Store attendants should be able to add products to specific categories
