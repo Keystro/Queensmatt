@@ -2,15 +2,20 @@ body
 {
     height: 100%;
     width: 100%;
-    overflow: hidden;
-    overflow-y: scroll;
+    overflow: scroll;
+    overflow-x: hidden;
     background-position: fixed;
+}
+::-webkit-scrollbar 
+{
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
 header
 {
     height: 10%;
     width: 100%;
-    background-color: ghostwhite;
+    background-color: #0d2f4a;
     border-bottom: 1px solid #0d2f4a;
 
 }
@@ -36,7 +41,7 @@ header .queensmatt p
 }
 nav
 {
-    background-color: ghostwhite;
+    background-color: #0d2f4a;
     overflow: hidden;
     z-index: 0;
     border-bottom: 1px solid #0d2f4a ;
@@ -60,17 +65,17 @@ nav .float-right
 nav a
 {
     text-decoration: none;
-    color: #0d2f4a;
+    color: white;
     text-align: center;
     padding: 7px 8px;
     font-size: 18px;
 }
 nav a.active
 {
-    background-color: #0d2f4a;
+    background-color: ghostwhite;
     border: 2px solid #0d2f4a;
     border-radius:5px ;
-    color: white;
+    color: #0d2f4a;
 }
 nav a:hover
 {
@@ -82,7 +87,7 @@ sidebar
     width: 0;
     position: fixed;
     z-index: 0;
-    top: 4;
+    top: 6%;
     left: 1;
     background-color: #0d2f4a;
     overflow-x: hidden ;
@@ -123,6 +128,7 @@ sidebar .closebtn
 {
     font-size: 20px;
     cursor: pointer;
+    top: 6%;
     background-color: #0d2f4a;
     color: white;
 
@@ -142,7 +148,7 @@ sidebar .closebtn
 #openmenu
 {
     transition: 0.5s;
-    top: 4.5%;
+    top: 6%;
     padding: 10px;
 }
 .topbar .openbtn
@@ -216,6 +222,7 @@ sidebar .closebtn
     text-align: center;
     font-family: Arial;
     border: 0.1px soldi #0d2f4a;
+    color: #0d2f4a;
     border-radius: 5px;
 
 
