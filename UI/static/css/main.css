@@ -193,6 +193,7 @@ sidebar .closebtn
 .grid-container
 {
     width: 90%;
+    margin-top: 20px;
     margin: 0 10px 0 10px;
 
     display: grid;
@@ -202,26 +203,27 @@ sidebar .closebtn
 }
 .card
 {
-    background-color: ghostwhite;
-    text-decoration: none;
-    color: #0d2f4a;
+    top:10%;
     display: flex;
-    flex-direction: row;
-    min-height: 100%;
+    flex-direction: column;
     position: relative;
-    top: 5%;
-    border: 1px solid #0d2f4a;
-    border-radius: 5px;
+    top: 10%;
     transition: all .1s ease-in;
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 1);
+    max-width: 300px;
+    min-height: 100%;
+    height: auto;
+    text-align: center;
+    font-family: Arial;
+    border: 0.1px soldi #0d2f4a;
+    border-radius: 5px;
+
+
 }
 .card:hover
 {
-    top: 3%%;
-    opacity: 0.6;
-}
-.card article
-{
-    padding: 20px;
+    top: 8%;
+    opacity: 0.8;
 }
 .card h1
 {
@@ -234,10 +236,4 @@ sidebar .closebtn
     font-size: 16px;
     margin: 0;
     color: #0d2f4a;
-}
-.card .thumb
-{
-    padding-bottom: 60%;
-    background-size: cover;
-    background-position: center center;
 }
