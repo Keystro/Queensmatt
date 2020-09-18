@@ -10,18 +10,17 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div class="float-left">
-                    <a class="active" href="index.html">Home</a>
-                    <a href="cart.html">Cart</a>
-                </div>
-                <div class="float-right">
-                    <a id="master" href="sales.html">Master</a>
-                    <a id="account" href="account.html">(User Account)</a>
-                    <a id="signin" onclick="openlogin()">Sign In</a>
-                    <a id="signup" onclick="opensignup()">Sign Up</a>
-                    <a id="logout" href="#">Logout</a>
-                </div>
+            <nav class="navbar" id="mynavbar">
+                <a class="active" href="index.html">Home</a>
+                <a href="cart.html">Cart</a>
+                <a class="floatright" id="signup" onclick="opensignup()">Sign Up</a>
+                <a class="floatright" id="signin" onclick="openlogin()">Sign In</a>
+                <a class="floatright" id="logout" href="#">Logout</a>
+                <a class="floatright" id="master" href="sales.html">Master</a>
+                <a class="floatright" id="account" href="account.html">(User Account)</a>
+                <a href="javascript:void(0);" class="icon" onclick="opennavbar()">
+                    <i class="fa fa-bars"></i>
+                </a>
             </nav> 
         </header>
         <sidebar id="sidebar">
