@@ -11,23 +11,12 @@ function closenav()
     document.getElementById("openmenu").style.display = "inline";
     
 }
-function openlogin()
+function opennavbar()
 {
-    document.getElementById("loginform").style.display = "block";
-}
-function opensignup()
-{
-    document.getElementById("signupform").style.display = "block";
-}
-function closeform()
-{
-    document.getElementById("signupform").style.display = "none";
-    document.getElementById("loginform").style.display = "none";
-}
-window.onclick = function(event)
-{
-    if (event.target == sign)
-    {
-        sign.style.display = "none"
+    var x = document.getElementById("mynavbar");
+    if(x.className === "navbar") {
+        x.className += "responsive";
+    } else {
+        x.className = "navbar";
     }
 }
