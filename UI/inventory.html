@@ -9,33 +9,27 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div class="float-left">
-                    <a href="index.html">Home</a>
-                    <a href="cart.html">Cart</a>
-                </div>
-                <div class="float-right">
-                    <a class="active" href="sales.html">Master</a>
-                    <a href="account.html">(User Account)</a>
-                    <a href="login.html">Sign In</a>
-                    <a href="resgister.html">Sign Up</a>
-                    <a href="#">Logout</a>
-                </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="cart.html">Cart</a>
+                <a class="floatright" href="resgister.html">Sign Up</a>
+                <a class="floatright" href="login.html">Sign In</a>
+                <a class="floatright" href="#">Logout</a>
+                <a class="active floatright" href="sales.html">Master</a>
+                <a class="floatright" href="account.html">(User Account)</a>
+            </nav>
         </header>
-        <sidebar id="sidebar">
-            <a class="closebtn" onclick="closenav()">X</a>
-            <a href="sales.html">View Sales</a>
-            <a href="attendant's_sales.html">Veiw Personel Sales</a>
-            <a class="active" href="inventory.html">View Inventory</a>
-            <a href="add_category.html">Add New category</a>
+        <sidebar>
+            <h1>Menu</h1>
+            <a href="sales.html">Sales</a>
+            <a href="attendant's_sales.html">Personel Sales</a>
+            <a class="active" href="inventory.html">Inventory</a>
+            <a href="add_category.html">Create Category</a>
             <a href="add_product.html">Add Product</a>
             <a href="add_admin.html">Invite Admin</a>
             <a href="add_attendant.html">Invite Attendant</a>
         </sidebar>
-        <main id="opensidebar">
-            <div id="openmenu">
-                <button class="openbtn" onclick="opennav()">Menu</button>
-            </div>
+        <main class="container">
             <div>
                 <table>
                     <th>

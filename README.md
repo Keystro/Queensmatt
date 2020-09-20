@@ -20,3 +20,5 @@ Pivotal Tracker: https://www.pivotaltracker.com/n/projects/2464183
 3) Store attendants should be able to add products to specific categories
 
 The application also helps managers keep track of product expriy dates
+
+![Home Page](UI/images/)

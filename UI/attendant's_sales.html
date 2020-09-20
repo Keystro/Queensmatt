@@ -9,21 +9,18 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div class="float-left">
-                    <a href="index.html">Home</a>
-                    <a href="cart.html">Cart</a>
-                </div>
-                <div class="float-right">
-                    <a class="active" href="sales.html">Master</a>
-                    <a href="account.html">(User Account)</a>
-                    <a href="login.html">Sign In</a>
-                    <a href="resgister.html">Sign Up</a>
-                    <a href="#">Logout</a>
-                </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="cart.html">Cart</a>
+                <a class="floatright" href="resgister.html">Sign Up</a>
+                <a class="floatright" href="login.html">Sign In</a>
+                <a class="floatright" href="#">Logout</a>
+                <a class="active floatright" href="sales.html">Master</a>
+                <a class="floatright" href="account.html">(User Account)</a>
+            </nav>
         </header>
-        <sidebar id="sidebar">
-            <a class="closebtn" onclick="closenav()">X</a>
+        <sidebar >
+            <h1>Menu</h1>
             <a href="sales.html">Sales</a>
             <a class="active" href="attendant's_sales.html">Personel Sales</a>
             <a href="inventory.html">Inventory</a>
@@ -32,33 +29,45 @@
             <a href="add_admin.html">Invite Admin</a>
             <a href="add_attendant.html">Invite Attendant</a>
         </sidebar>
-        <div id="openmenu">
-            <button class="openbtn" onclick="opennav()">Menu</button>
-        </div>
-        <main id="opensidebar">
-            <div class="grid-container">
+        <main class="container">
+            <div class="flex-container">
                 <div class="item-1">
-                    <a class="card">
-                        <img src="images/Atd1.jpeg" alt="card image" style="width:100%;">
-                        <h1>Item 1</h1>
-                        <p class="price"><b>Price:KES 100</b></p>
-                        <p class="quantity">Sold Out</p>
+                    <a class="profile">
+                        <img src="images/terry.jpeg" alt="card image">
+                        <div class="card-body">
+                            <h1>Terry Kirungo</h1>
+                            <h2>Store Manager</h2>
+                            <label>Email</label>
+                            <p>terrykirungo@gmail.com</p>
+                            <label>Tel</label>
+                            <p>07terry</p>
+                            <label>Residence</label>
+                            <p>Kasarani</p>
+                            <label>Qualifications</label>
+                            <p>More</p>
+                        </div>
                     </a>
                 </div>
                 <div class="item-1">
-                    <a class="card">
-                        <img src="images/atd2.jpeg" alt="card image" style="width:100%;">
-                        <h1>Item 1</h1>
-                        <p class="price"><b>Price:KES 100</b></p>
-                        <p class="quantity">Sold Out</p>
+                    <a class="profile">
+                        <img src="images/oliver.png" alt="card image" >
+                        <div class="card-body">
+                            <h1>Oliver Solomon</h1>
+                            <h2>Store Attendant</h2>
+                            <p class="price"><b>Price:KES 100</b></p>
+                            <p class="quantity">Sold Out</p>
+                        </div>
                     </a>
                 </div>
                 <div class="item-1">
-                    <a class="card">
-                        <img src="images/atd3.jpg" alt="card image" style="width:100%;">
-                        <h1>Item 1</h1>
-                        <p class="price"><b>Price:KES 100</b></p>
-                        <p class="quantity">Sold Out</p>
+                    <a class="profile">
+                        <img src="images/alex.jpeg" alt="card image">
+                        <div class="card-body">
+                            <h1>Alex Magwe</h1>
+                            <h2>Store manager</h2>
+                            <p class="price"><b>Price:KES 100</b></p>
+                            <p class="quantity">Sold Out</p>
+                        </div>
                     </a>
                 </div>
             </div>

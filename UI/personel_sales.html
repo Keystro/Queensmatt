@@ -9,29 +9,26 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div class="float-left">
-                    <a href="index.html">Home</a>
-                    <a href="cart.html">Cart</a>
-                </div>
-                <div class="float-right">
-                    <a href="sales.html">Master</a>
-                    <a class="active" href="account.html">(User Account)</a>
-                    <a href="login.html">Sign In</a>
-                    <a href="resgister.html">Sign Up</a>
-                    <a href="#">Logout</a>
-                </div>
+            <nav class="navbar" id="mynavbar">
+                <a href="index.html">Home</a>
+                <a href="cart.html">Cart</a>
+                <a class="floatright" id="signup" onclick="opensignup()">Sign Up</a>
+                <a class="floatright" id="signin" onclick="openlogin()">Sign In</a>
+                <a class="floatright" id="logout" href="#">Logout</a>
+                <a class="floatright" id="master" href="sales.html">Master</a>
+                <a class="floatright active" id="account" href="account.html">(User Account)</a>
+                <a href="javascript:void(0);" class="icon" onclick="opennavbar()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </nav> 
         </header>
-        <sidebar id="sidebar">
-            <a class="closebtn" onclick="closenav()">X</a>
+        <sidebar >
+            <h1>Menu</h1>
             <a href="account.html">Time Logs</a>
             <a class="active" href="personel_sales.html">View Sales</a>
             <a href="profile.html">User Profile</a>                
         </sidebar>
-        <main id="opensidebar">
-            <div id="openmenu">
-                <button class="openbtn" onclick="opennav()">Menu</button>
-            </div>
+        <main >
             <div>
                 
             </div>
